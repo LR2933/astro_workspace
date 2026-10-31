@@ -4,9 +4,9 @@ from collections import defaultdict
 import gymnasium as gym
 import numpy as np
 
-from grid_world_agent import GridWorldAgent
+from agent import GridWorldAgent
 from utils import encode_obs, load_model
-from grid_world_env import GridWorldEnv
+from env import GridWorldEnv
 
 env = GridWorldEnv(render_mode="human")
 agent = GridWorldAgent(env=env)
