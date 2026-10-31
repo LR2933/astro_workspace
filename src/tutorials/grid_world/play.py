@@ -1,12 +1,11 @@
 import argparse
 from collections import defaultdict
 
-import gymnasium as gym
 import numpy as np
 
 from agent import GridWorldAgent
-from utils import encode_obs, load_model
 from env import GridWorldEnv
+from utils import encode_obs, load_model
 
 env = GridWorldEnv(render_mode="human")
 agent = GridWorldAgent(env=env)

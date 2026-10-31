@@ -1,4 +1,3 @@
-import gymnasium as gym
 from tqdm import tqdm
 
 from agent import GridWorldAgent
