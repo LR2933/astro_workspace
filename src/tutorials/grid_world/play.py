@@ -6,8 +6,9 @@ import numpy as np
 
 from grid_world_agent import GridWorldAgent
 from utils import encode_obs, load_model
+from grid_world_env import GridWorldEnv
 
-env = gym.make("gymnasium_env/GridWorld-v0", render_mode="human")
+env = GridWorldEnv(render_mode="human")
 agent = GridWorldAgent(env=env)
 
 parse = argparse.ArgumentParser()

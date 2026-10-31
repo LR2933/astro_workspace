@@ -10,7 +10,9 @@ start_epsilon = 1.0
 epsilon_decay = start_epsilon / (n_episodes / 2)
 final_epsilon = 0.1
 
-env = gym.make("gymnasium_env/GridWorld-v0", render_mode=None)
+from grid_world_env import GridWorldEnv
+
+env = GridWorldEnv(render_mode=None)
 
 agent = GridWorldAgent(
     env=env,
